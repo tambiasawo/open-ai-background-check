@@ -117,7 +117,7 @@ const ResultsPanel: React.FC<ResultsPanelProps> = ({
       </div>
       {!foundResult && (
         <div className="text-sm text-center mb-4 text-red-500">
-          We could not find any information on you.{" "}
+          We searched and found almost no significant information on you. See below and{" "}
           {retries < 2 ? (
             "Please try again"
           ) : (
