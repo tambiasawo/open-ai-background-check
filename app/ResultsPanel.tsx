@@ -1,6 +1,6 @@
 import React from "react";
 import { BackgroundCheckResult } from "@/types";
-import { Download, FileText } from "./_components/ui/icons";
+import { Download, FileText, InfoIcon } from "./_components/ui/icons";
 import { generateBackgroundCheckPDF } from "./actions";
 import Tooltip from "./_components/ui/Tooltip/Tooltip";
 
@@ -135,12 +135,14 @@ const ResultsPanel: React.FC<ResultsPanelProps> = ({
           <h3 className="text-lg font-medium">
             {results.prospect.firstName} {results.prospect.lastName}
           </h3>
-          <Tooltip text="This is only an estimated calculation and should be treated as such">
+         <Tooltip text="This is only an estimated calculation and should be treated as such">
             <span
-              className={`px-3 py-1 rounded-full text-sm font-medium ${getRiskColor(
+              className={`flex gap-1 items-center px-3 py-1 rounded-full text-sm font-medium ${getRiskColor(
                 results.riskLevel
               )}`}
             >
+              {" "}
+              <InfoIcon />
               {results.riskLevel.charAt(0).toUpperCase() +
                 results.riskLevel.slice(1)}{" "}
               Risk
