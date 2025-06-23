@@ -7,21 +7,11 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 py-2">
         <div className="">
           <div className="flex items-center justify-between md:justify-start md:space-x-2">
-            <Image
-              src="https://rented123-brand-files.s3.us-west-2.amazonaws.com/logo_white.svg"
-              alt="logo"
-              width="80"
-              height={80}
-              className="w-15 h-15 md:w-20 md:h-20"
-            />
-
             <div>
               <h1 className="text-lg md:text-2xl font-bold text-[#293074]">
-                Rented123
+                  AI Intelligent Background Verification
               </h1>
-              <p className="text-sm text-[#293074] hidden md:block">
-                AI Intelligent Background Verification
-              </p>
+        
             </div>
           </div>
         </div>
