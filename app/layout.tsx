@@ -16,9 +16,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "AI Background Check",
   description: "Run your background Check using AI",
-  icons: {
-    icon: "/logo.png",
-  },
 };
 
 export default function RootLayout({
