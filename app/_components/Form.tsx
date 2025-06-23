@@ -372,14 +372,7 @@ export const Form: React.FC<BackgroundCheckFormProps> = ({
         )}
         <div className="flex items-start justify-center !gap-0 text-center text-sm text-gray-500 mt-3 ">
           <span className="">
-            You agree to Rented123 using AI to run a background check on you.{" "}
-            <a
-              href="https://rented123.com/"
-              className="underline"
-              target="_blank"
-            >
-              Privacy policy
-            </a>
+            We will never divulge or misuse your information
           </span>
         </div>
       </div>
