@@ -8,7 +8,6 @@ import { getToken } from "./actions";
 import { useRouter, useSearchParams } from "next/navigation";
 
 export default function BackgroundCheck() {
-  const [, setActiveToken] = useState("");
   const [retries, setRetries] = useState(0);
 
   const searchParams = useSearchParams();
@@ -73,17 +72,6 @@ export default function BackgroundCheck() {
     return isValid;
   };
 
-  const verifyToken = React.useCallback(
-    async (token: string | null) => {
-      const activeToken = await getToken(token as string);
-      if (!activeToken || activeToken.product !== "ai-check")
-        router.push("/404");
-      else {
-        setActiveToken(activeToken.token);
-      }
-    },
-    [router]
-  );
 
   const handleSubmit = React.useCallback(async (prospectInfo: ProspectInfo) => {
     setIsLoading(true);
@@ -112,16 +100,6 @@ export default function BackgroundCheck() {
       setIsLoading(false);
     }
   }, []);
-
-  React.useEffect(() => {
-    if (!token) {
-      router.push("/404");
-    } else {
-      verifyToken(token);
-    }
-    const retries = localStorage.getItem("retries");
-    if (retries) setRetries(JSON.parse(retries));
-  }, [token, verifyToken, router]);
 
   React.useEffect(() => {
     localStorage.setItem("retries", JSON.stringify(retries));
