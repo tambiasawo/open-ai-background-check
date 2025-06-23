@@ -29,7 +29,7 @@ const addPageFooter = (
     .setFontSize(8)
     .setTextColor(lightGrayColor[0], lightGrayColor[1], lightGrayColor[2]);
   const year = new Date().getFullYear();
-  doc.text(`© ${year} Rented123. All rights reserved.`, marginX, footerY + 5);
+  doc.text(`© ${year} Tambi. All rights reserved.`, marginX, footerY + 5);
 
   const pageText = `Page ${pageNum} of ${totalPages}`;
   const pageTextWidth = doc.getTextWidth(pageText);
@@ -329,14 +329,14 @@ export const generateBackgroundCheckPDF = (
   }
 
   doc.setProperties({
-    title: `Rented123_AI_Background_Check_${results.prospect.lastName}_${results.prospect.firstName}`,
-    creator: "Rented123",
+    title: `AI_Background_Check_${results.prospect.lastName}_${results.prospect.firstName}`,
+    creator: "Tambi",
     keywords: process.env.NEXT_PUBLIC_KEYWORDS,
   });
 
   // Output
   doc.save(
-    `Rented123_AI_Background_Check_${results.prospect.lastName}_${results.prospect.firstName}.pdf`
+    `AI_Background_Check_${results.prospect.lastName}_${results.prospect.firstName}.pdf`
   );
 };
 
