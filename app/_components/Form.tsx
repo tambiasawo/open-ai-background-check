@@ -371,7 +371,7 @@ export const Form: React.FC<BackgroundCheckFormProps> = ({
           </button>
         )}
         <div className="flex items-start justify-center !gap-0 text-center text-sm text-gray-500 mt-3 ">
-          <span className="md:hidden">
+          <span className="">
             You agree to Rented123 using AI to run a background check on you.{" "}
             <a
               href="https://rented123.com/"
@@ -379,18 +379,6 @@ export const Form: React.FC<BackgroundCheckFormProps> = ({
               target="_blank"
             >
               Privacy policy
-            </a>
-          </span>
-          <span className="hidden md:block">
-            By proceeding you agree to Rented123 using AI to run a background
-            check on you. Your personal information will not be stored anywhere.
-            For more information, see our{" "}
-            <a
-              href="https://rented123.com/"
-              className="underline"
-              target="_blank"
-            >
-              privacy policy
             </a>
           </span>
         </div>
