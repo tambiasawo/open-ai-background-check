@@ -4,15 +4,9 @@ import { ProspectInfo, BackgroundCheckResult } from "@/types";
 import ResultsPanel from "./ResultsPanel";
 import { Form } from "./_components/Form";
 import Header from "./_components/Header";
-import { getToken } from "./actions";
-import { useRouter, useSearchParams } from "next/navigation";
 
 export default function BackgroundCheck() {
   const [retries, setRetries] = useState(0);
-
-  const searchParams = useSearchParams();
-  const token = searchParams.get("token");
-  const router = useRouter();
 
   const [isLoading, setIsLoading] = useState(false);
   const [apiError, setApiError] = useState<string | null>(null);
