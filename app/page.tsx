@@ -108,9 +108,6 @@ export default function BackgroundCheck() {
         }`}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <p className="text-lg font-semibold mt-5 text-center text-[#293074] md:hidden">
-            AI Intelligent Background Verification
-          </p>
           <div className={`bg-white rounded-lg md:shadow-md p-6 pt-0`}>
             <Form
               onSubmit={handleSubmit}

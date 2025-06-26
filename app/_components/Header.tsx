@@ -18,7 +18,7 @@ const Header: React.FC = () => {
               <h1 className="text-lg md:text-2xl font-bold text-[#293074]">
                   AI Intelligent Background Verification
               </h1>
-             <p className="text-sm text-[#293074]">
+             <p className="text-sm text-[#293074] hidden md:block">
                 Save money and time by getting instant background verification of your prospect
               </p>
             </div>
