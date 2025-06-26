@@ -6,13 +6,13 @@ const Header: React.FC = () => {
     <header className="shadow-sm text-white">
       <div className="container mx-auto px-4 py-2">
         <div className="">
-          <div className="flex items-center justify-between md:justify-start md:space-x-2">
+          <div className="flex flex-col md:flex-row items-center justify-between md:justify-start md:space-x-2">
              <Image
               src={'/logo.png'}
               alt="logo"
-              width="80"
-              height={80}
-              className="w-15 h-15 md:w-20 md:h-20"
+              width="160"
+              height={100}
+              className="w-[80px] h-[80px]"
             />
             <div>
               <h1 className="text-lg md:text-2xl font-bold text-[#293074]">
