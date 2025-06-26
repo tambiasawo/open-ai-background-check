@@ -12,7 +12,7 @@ const Header: React.FC = () => {
               alt="logo"
               width="160"
               height={100}
-              className="w-[80px] h-[80px]"
+              className="w-[100px]"
             />
             <div>
               <h1 className="text-lg md:text-2xl font-bold text-[#293074]">
