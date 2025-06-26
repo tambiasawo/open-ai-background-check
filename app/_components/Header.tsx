@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     <header className="shadow-sm text-white">
       <div className="container mx-auto px-4 py-2">
         <div className="">
-          <div className="flex flex-col md:flex-row items-center justify-between md:justify-start md:space-x-2">
+          <div className="flex flex-col md:flex-row items-center justify-between md:justify-start md:space-x-0">
              <Image
               src={'/logo.png'}
               alt="logo"
